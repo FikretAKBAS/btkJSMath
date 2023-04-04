@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script type="text/javascript" language="javascript">
+      // parseInt() : Kendisine parametre olarak verilen değerler doğrultusunda içeriğini tam sayı haline dönüştürerek, yeni bir içerik oluşturur ve oluşturduğu değeri geriye döndürür. (Rakam, + ve - değeri haricinde bir karakter gördüğünde işlem durur)
+
+      var degerbir = "0x10"; // 16lık
+      var degeriki = "10";
+      var degeruc = "10";
+
+      var veriturubir = typeof degerbir;
+      var verituruiki = typeof degeriki;
+      var verituruuc = typeof degeruc;
+
+      var sonucbir = parseInt(degerbir);
+      var sonuciki = parseInt(degeriki, 16);
+      var sonucuc = parseInt(degeruc, 8);
+
+      var sveriturubir = typeof sonucbir;
+      var sverituruiki = typeof sonuciki;
+      var sverituruuc = typeof sonucuc;
+
+      document.write("Değer: " + degerbir + "(" + veriturubir + ") <br/>");
+      document.write(
+        "Sonuç: " +
+          sonucbir +
+          "(" +
+          sveriturubir +
+          ") <br/><br/><br/><br/><br/>"
+      );
+
+      document.write("Değer: " + degeriki + "(" + verituruiki + ") <br/>");
+      document.write(
+        "Sonuç: " +
+          sonuciki +
+          "(" +
+          sverituruiki +
+          ") <br/><br/><br/><br/><br/>"
+      );
+
+      document.write("Değer: " + degeruc + "(" + verituruuc + ") <br/>");
+      document.write(
+        "Sonuç: " + sonucuc + "(" + sverituruuc + ") <br/><br/><br/><br/><br/>"
+      );
+    </script>
+  </body>
+</html>
